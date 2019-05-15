@@ -20,7 +20,7 @@ class ReverseGeoCoder:
     def registerCoordintes(self):
         coordinates = input()
         if not coordinates[0] == "[":
-            coordinates = input().split(",")
+            coordinates = coordinates.split(",")
             self.coordinates.append([coordinates[0][1:], coordinates[1][:-1]])
         else:
             coordinates = coordinates[1:-1].split(',')
